@@ -1,127 +1,139 @@
 :root {
-    --primary-color: #F2672E;
+  --primary-color: #f2672e;
 }
 
 * {
-    font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
-
 body {
-    background: linear-gradient(104.3deg, #121212 33.84%, #1E3A8A 162.79%);
-    overflow: hidden;
-    transition: 1s ease;
-    padding: 0 70px;
-    font-size: 80%;
+  background: linear-gradient(104.3deg, #121212 33.84%, #1e3a8a 162.79%);
+  overflow: hidden;
+  transition: 1s ease;
+  padding: 0 70px;
+  font-size: 80%;
 }
 
 .dark-body {
-    background: white !important;
-    color: #1F2937 !important;
+  background: white !important;
+  color: #1f2937 !important;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-
 .frontendtext2 {
-    background: #F38C16;
-    background: linear-gradient(to right, #9152d3 22%, #c64fbc 59%, #eb4798 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: #f38c16;
+  background: linear-gradient(to right, #9152d3 22%, #c64fbc 59%, #eb4798 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dark-bg {
-    background: #1F2937 !important;
+  background: #1f2937 !important;
 }
 
 .dark-color {
-    color: #1F2937 !important;
+  color: #1f2937 !important;
 }
-
 
 .container {
-    height: 100vh;
+  height: 100vh;
 }
-
 
 /* Shading */
 
 .eclipse {
-    position: fixed;
+  position: fixed;
 }
 
 .eclipse1 {
-    z-index: 1;
-    top: 0;
-    left: 0;
-    /* transform: translate(-500px , -160px); */
-    margin-left: -20rem;
-    margin-top: -15rem;
-    animation: flicker 5s infinite;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* transform: translate(-500px , -160px); */
+  margin-left: -20rem;
+  margin-top: -15rem;
+  animation: flicker 5s infinite;
 }
 
 .eclipse2 {
-    animation: flicker 5s infinite;
-    margin-right: -4rem;
-    margin-bottom: -5rem;
-    bottom: 0;
-    right: 0;
-    transform: translateX(160px);
-    transform: translateY(120px);
+  animation: flicker 5s infinite;
+  margin-right: -4rem;
+  margin-bottom: -5rem;
+  bottom: 0;
+  right: 0;
+  transform: translateX(160px);
+  transform: translateY(120px);
 }
 
 .asset1 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    filter: blur(6px);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  filter: blur(6px);
 }
 
 .asset2 {
-    position: absolute;
-    right: 7rem;
-    top: 1.5rem;
-    filter: blur(3px);
-    animation: float 5.5s ease 0s infinite normal forwards;
+  position: absolute;
+  right: 7rem;
+  top: 1.5rem;
+  filter: blur(3px);
+  animation: float 5.5s ease 0s infinite normal forwards;
 }
 
 .asset3 {
-    position: absolute;
-    bottom: 2rem;
-    right: 30rem;
-    filter: blur(1.5px);
-    animation: float 3.4s ease 0s infinite normal forwards;
+  position: absolute;
+  bottom: 2rem;
+  right: 30rem;
+  filter: blur(1.5px);
+  animation: float 3.4s ease 0s infinite normal forwards;
+}
+
+.isi h1 {
+  line-height: 60px;
+  font-size: 3.5rem;
+}
+
+.isi p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.nav-link {
+  display: inline;
+}
+
+.isi {
+  margin-top: 3rem;
 }
 
 /* End Shading */
 
-
 /* Navbar Start */
 
 .navbar .navbar-brand {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .navbar {
-    padding: 1.5rem 3rem;
+  padding: 1.5rem 3rem;
 }
 
 .navbar a {
-    color: #ffff !important;
-
+  color: #ffff !important;
 }
 
-
 a.underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Navbar End */
@@ -129,143 +141,156 @@ a.underline {
 /*  */
 
 .button-white {
-    border-radius: 5px;
-    border: 0;
-    padding: 12px 20px;
-    background: var(--primary-color);
-    color: white;
+  border-radius: 5px;
+  border: 0;
+  padding: 12px 20px;
+  background: var(--primary-color);
+  color: white;
 }
 
 .image1 {
-    animation: float 3s ease 0s infinite normal forwards;
+  animation: float 3s ease 0s infinite normal forwards;
 }
 
 .muter {
-    animation: muter 0.5s ease-in-out forwards;
+  animation: muter 0.5s ease-in-out forwards;
 }
 
-
 @keyframes flicker {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-    20% {
-        opacity: 0.7;
-        transform: scale(0.8);
-    }
+  20% {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
 
-    40% {
-        opacity: 1;
-        transform: scale(1.2);
-    }
+  40% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 
-    60% {
-        opacity: 0.7;
-        transform: scale(0.9);
-    }
+  60% {
+    opacity: 0.7;
+    transform: scale(0.9);
+  }
 
-    80% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
+  80% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 
-    100% {
-        opacity: 0.8;
-        transform: scale(1);
-    }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
 }
 
 @keyframes float {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
 
-    50% {
-        transform: translate3d(0, -10px, 0);
-    }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
 
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @keyframes muter {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(45deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
 }
 
-
 @media only screen and (max-width: 768px) {
-    body {
-        padding: 0 0.2rem;
-    }
+  body {
+    padding: 0 0.2rem;
+  }
 
-    .container {
-        padding: 2rem;
-    }
+  .container {
+    padding: 2rem;
+  }
 
-    .navbar-brand {
-        display: none;
-    }
+  .navbar-brand {
+    display: none;
+  }
 
-    .navbar {
-        position: absolute !important;
-    }
+  .navbar {
+    position: absolute !important;
+  }
 
-    .navbar {
-        padding: 2rem 1rem;
-    }
+  .navbar {
+    padding: 2rem 1rem;
+  }
 
-    .navbar-nav {
-        flex-direction: row;
-    }
+  .navbar-nav {
+    flex-direction: row;
+  }
 
-    .isi h1 {
-        line-height: 48px;
-        font-size: 32px;
-    }
+  .isi h1 {
+    line-height: 48px;
+    font-size: 32px;
+  }
 
-    .isi p {
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 20px;
-    }
+  .isi p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
 
-    .nav-link {
-        display: inline;
-    }
+  .nav-link {
+    display: inline;
+  }
 
-    .isi {
-        margin-top: 3rem;
-    }
+  .isi {
+    margin-top: 3rem;
+  }
 
-    .image1 {
-        z-index: 1;
-        position: absolute;
-        opacity: 0.28;
-        width: 40rem;
-        display: none;
-    }
+  .image1 {
+    z-index: 1;
+    position: absolute;
+    opacity: 0.28;
+    width: 40rem;
+    display: none;
+  }
 
-    .eclipse1 {
-        transform: scale(1);
-        opacity: 0.5;
-        margin-left: -30rem;
-        margin-top: -20rem;
-    }
+  .eclipse1 {
+    transform: scale(1);
+    opacity: 0.5;
+    margin-left: -30rem;
+    margin-top: -20rem;
+  }
 
-    .kanan {
-        margin-top: -20rem;
-    }
+  .kanan {
+    margin-top: -20rem;
+  }
 
-    .asset3 {
-        left: 2rem;
-    }
+  .asset3 {
+    left: 2rem;
+  }
+}
 
+/* Cursor */
+
+body .cursor {
+  pointer-events: none;
+}
+body .cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+body .cursor__ball circle {
+  fill: #f7f8fa;
 }

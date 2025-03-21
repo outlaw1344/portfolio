@@ -18,6 +18,7 @@ lightmode.addEventListener("click", function () {
   icon.classList.toggle("muter");
 });
 
+
 // TYPING EFFECT
 document.addEventListener("DOMContentLoaded", function () {
   new TypeIt(".frontend-text", {
@@ -40,5 +41,3 @@ document.addEventListener("DOMContentLoaded", function () {
 // window.onbeforeunload = function () {
 //   text.classList.remove("underline");
 // };
-
-
