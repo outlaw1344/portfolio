@@ -33,11 +33,11 @@
         </div>
     </div> -->
 
+    <img class="asset1" src="assets/1.png" alt="">
     <div class="container">
         <!-- Asset Images -->
         <img class="eclipse1 eclipse" src="assets/Eclipse1.png" alt="">
         <img class="eclipse2 eclipse" src="assets/Eclipse2.png" alt="">
-        <img class="asset1" src="assets/1.png" alt="">
         <img class="asset2" src="assets/2.png" alt="">
         <img class="asset3" src="assets/3.png" alt="">
         <!-- Asset Images -->
@@ -48,7 +48,8 @@
                 <a class="navbar-brand" href="#" id="link">Galang !</a>
                 <ul class="navbar-nav mx-auto d-flex flex-row gap-5">
                     <li class="nav-item">
-                        <a class="nav-link active hoverable" id="link" aria-current="page" href="#">Tentang</a>
+                        <a class="nav-link active hoverable theme-nav-link" id="link" aria-current="page"
+                            href="#">Tentang</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hoverable" id="link" href="#">Portofolio</a>
@@ -70,8 +71,8 @@
         <!-- Navbar End -->
         <div class="isi " id="isi">
             <div class="row h-100 d-flex align-items-center">
-                <div class="col-md-6 text-light d-flex flex-column gap-4" style="z-index: 999">
-                    <h1 id="isi-h1" class="isi-h1">
+                <div class="col-md-6 text-light d-flex flex-column gap-5" style="z-index: 999">
+                    <h1 id="isi-h1" class="isi-h1 theme-text" style="width: 90%;">
                         Halo! Saya Galang. <br>
                         Seorang <span class="frontend-text" style="background: #F38C16;
                                 background: linear-gradient(to right, #F38C16 22%, #F0513B 59%, #EF4444 100%);
@@ -79,15 +80,12 @@
                                 -webkit-text-fill-color: transparent;
                                 "></span><br>
                     </h1>
-                    <p id="isi-p" class="isi-p">
-                        Hai! Saya Galang, seorang Front End Web Developer yang bersemangat menciptakan website yang
-                        cepat, responsif, dan
-                        estetik. Saya menggabungkan keahlian teknis dengan sentuhan desain untuk menghadirkan pengalaman
-                        pengguna yang mulus dan
-                        menarik.
+                    <p id="isi-p" class="isi-p theme-text">
+                        Front end web developer dan UI / UX Designer , Pengalaman 7 tahun di bidang website
+                        terutama menggunakan framework Vue JS
                     </p>
                     <div>
-                        <a class="button-white hoverable " id="button-white">
+                        <a class="button-white hoverable theme-button" id="button-white" href="#skill">
                             🚀 Apa yang Saya Tawarkan?
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -103,32 +101,39 @@
             </div>
         </div>
 
-        <div class="isi">
-            <div class="row">
-                <div class="col-12">
-                    <h1 style="font-size: 30px; color: white;">🚀 Apa yang Saya Tawarkan?</h1>
+        <div class="isi" id="skill">
+            <div class="row pt">
+                <div class="col-12 py-5">
+                    <h1 style="font-size: 30px;" class="theme-text">🚀 Apa yang Saya Tawarkan?</h1>
                 </div>
                 <div class="col-12">
-                    <div class="d-flex gap-2 pt-5" style="height: 40vh;">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">✔️ Website Responsif – Tampilan sempurna di semua perangkat
-                                    (Desktop, Tablet, Mobile).</p>
+                    <!-- Ubah d-flex menjadi row dan tambahkan class responsive -->
+                    <div class="row row-cols-1 row-cols-md-3 g-2" style="min-height: 40vh;">
+                        <div class="col">
+                            <div class="card theme-card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">✔️ Website Responsif - Tampilan sempurna di semua perangkat
+                                        (Desktop, Tablet, Mobile).</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card" style="">
-                            <div class="card-body">
-                                <h5 class="card-title">✔️ UI/UX yang Intuitif </h5>
-                                <p class="card-text">– Desain yang user-friendly dengan
-                                    interaksi yang menyenangkan.</p>
+                        <div class="col">
+                            <div class="card theme-card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">✔️ UI/UX yang Intuitif </h5>
+                                    <p class="card-text">- Desain yang user-friendly dengan
+                                        interaksi yang menyenangkan.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card" style="">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">✔️ Teknologi Terkini – HTML5, CSS3, JavaScript (React/Vue), dan
-                                    framework modern lainnya.</p>
+                        <div class="col">
+                            <div class="card theme-card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">✔️ Teknologi Terkini - HTML5, CSS3, JavaScript (React/Vue), dan
+                                        framework modern lainnya.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

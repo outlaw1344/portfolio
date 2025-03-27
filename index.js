@@ -1,26 +1,47 @@
 const lightmode = document.getElementById("lightmode");
-const isih1 = document.getElementById("isi-h1");
-const isip = document.getElementById("isi-p");
 const icon = document.getElementById("icon");
-const button = document.getElementById("button-white");
-const navlinks = document.querySelectorAll(".nav-link");
 
-lightmode.addEventListener("click", function () {
-  document.body.classList.toggle("dark-body");
-  isih1.classList.toggle("dark-color");
-  isip.classList.toggle("dark-color");
-  button.classList.toggle("dark-bg");
-  icon.classList.toggle("dark-color");
-  icon.classList.toggle("muter");
-
-  navlinks.forEach(link => {
-    if (document.body.classList.contains("dark-body")) {
-      link.style.color = "#ffffff"; // Warna putih saat mode gelap
-    } else {
-      link.style.color = "#1f2937"; // Warna asli saat mode terang
-    }
-  });
+// Set default theme to light
+document.addEventListener("DOMContentLoaded", function() {
+  const html = document.documentElement;
+  const icon = document.getElementById("icon");
+  
+  // Check localStorage for saved preference or default to light
+  const savedTheme = localStorage.getItem("theme") || "light";
+  html.setAttribute("data-theme", savedTheme);
+  
+  // Set appropriate icon and color
+  if (savedTheme === "light") {
+    icon.classList.replace("bi-moon", "bi-brightness-high");
+    icon.style.color = "#1f2937";
+  } else {
+    icon.classList.replace("bi-brightness-high", "bi-moon");
+    icon.style.color = "#ffffff";
+  }
 });
+
+
+lightmode.addEventListener("click", function() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute("data-theme") === "dark";
+  
+  // Toggle theme
+  html.setAttribute("data-theme", isDark ? "light" : "dark");
+  
+  // Rotate icon
+  icon.classList.toggle("muter");
+  
+  // Change icon based on theme
+  if (isDark) {
+    icon.classList.replace("bi-moon", "bi-brightness-high");
+    icon.style.color = "#1f2937"; // Warna gelap untuk light mode
+  } else {
+    icon.classList.replace("bi-brightness-high", "bi-moon");
+    icon.style.color = "#ffffff"; // Warna terang untuk dark mode
+  }
+});
+
+
 
 // TYPING EFFECT
 document.addEventListener("DOMContentLoaded", function () {
