@@ -19,7 +19,7 @@
 
 <body>
 
-    <div class="cursor">
+    <!-- <div class="cursor">
         <div class="cursor__ball cursor__ball--big ">
             <svg height="30" width="30">
                 <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
@@ -31,24 +31,21 @@
                 <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
             </svg>
         </div>
-    </div>
+    </div> -->
 
     <div class="container">
+        <!-- Asset Images -->
         <img class="eclipse1 eclipse" src="assets/Eclipse1.png" alt="">
         <img class="eclipse2 eclipse" src="assets/Eclipse2.png" alt="">
         <img class="asset1" src="assets/1.png" alt="">
         <img class="asset2" src="assets/2.png" alt="">
         <img class="asset3" src="assets/3.png" alt="">
+        <!-- Asset Images -->
+
+        <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand" href="#" id="link">Galang !</a>
-                <div>
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button> -->
-                </div>
                 <ul class="navbar-nav mx-auto d-flex flex-row gap-5">
                     <li class="nav-item">
                         <a class="nav-link active hoverable" id="link" aria-current="page" href="#">Tentang</a>
@@ -70,34 +67,34 @@
                 </ul>
             </div>
         </nav>
-        <div class="isi" id="isi" style="height: 100vh;">
+        <!-- Navbar End -->
+        <div class="isi " id="isi">
             <div class="row h-100 d-flex align-items-center">
                 <div class="col-md-6 text-light d-flex flex-column gap-4" style="z-index: 999">
-                    <h1 id="isi-h1" style="font-weight: 700;">
+                    <h1 id="isi-h1" class="isi-h1">
                         Halo! Saya Galang. <br>
                         Seorang <span class="frontend-text" style="background: #F38C16;
                                 background: linear-gradient(to right, #F38C16 22%, #F0513B 59%, #EF4444 100%);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
                                 "></span><br>
-                        <!-- <span  class="frontend-text2"  style="background: #F38C16;
-                                background: linear-gradient(to right, #9152d3 22%, #c64fbc 59%, #eb4798 100%);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                                ">Web Developer</span> -->
                     </h1>
-                    <p id="isi-p" style="line-height: 150%;">Passionate di bidang Frontend Dev dan UI/UX Design. Suka
-                        membangun
-                        antarmuka website yang fast-performace dan well-design menggunakan
-                        teknologi-teknologi terbaru.</p>
+                    <p id="isi-p" class="isi-p">
+                        Hai! Saya Galang, seorang Front End Web Developer yang bersemangat menciptakan website yang
+                        cepat, responsif, dan
+                        estetik. Saya menggabungkan keahlian teknis dengan sentuhan desain untuk menghadirkan pengalaman
+                        pengguna yang mulus dan
+                        menarik.
+                    </p>
                     <div>
-                        <button class="button-white hoverable" id="button-white">Lihat Portfolio
+                        <a class="button-white hoverable " id="button-white">
+                            🚀 Apa yang Saya Tawarkan?
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6 kanan d-flex align-items-center justify-content-center">
@@ -105,19 +102,53 @@
                 </div>
             </div>
         </div>
+
+        <div class="isi">
+            <div class="row">
+                <div class="col-12">
+                    <h1 style="font-size: 30px; color: white;">🚀 Apa yang Saya Tawarkan?</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex gap-2 pt-5" style="height: 40vh;">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">✔️ Website Responsif – Tampilan sempurna di semua perangkat
+                                    (Desktop, Tablet, Mobile).</p>
+                            </div>
+                        </div>
+                        <div class="card" style="">
+                            <div class="card-body">
+                                <h5 class="card-title">✔️ UI/UX yang Intuitif </h5>
+                                <p class="card-text">– Desain yang user-friendly dengan
+                                    interaksi yang menyenangkan.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">✔️ Teknologi Terkini – HTML5, CSS3, JavaScript (React/Vue), dan
+                                    framework modern lainnya.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="./Cursor.js"></script>
+    <!-- <script src="./Cursor.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="index.js"></script> //JS DOM
+    <script src="index.js"></script>
     <!-- type js libbary -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="https://kit.fontawesome.com/5c6bbcadf4.js" crossorigin="anonymous"></script>

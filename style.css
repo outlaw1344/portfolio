@@ -6,9 +6,29 @@
   font-family: "Poppins", sans-serif !important;
 }
 
+.isi {
+  height: 100vh !important;
+}
+
+.isi-h1 {
+  font-weight: 700 !important;
+}
+
+.isi-p {
+  line-height: 150% !important;
+}
+
+.card {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+}
+
+.card .card-title {
+}
+
 body {
   background: linear-gradient(104.3deg, #121212 33.84%, #1e3a8a 162.79%);
-  overflow: hidden;
   transition: 1s ease;
   padding: 0 70px;
   font-size: 80%;
@@ -46,6 +66,7 @@ body {
 
 .eclipse {
   position: fixed;
+  z-index: 1;
 }
 
 .eclipse1 {
@@ -55,11 +76,11 @@ body {
   /* transform: translate(-500px , -160px); */
   margin-left: -20rem;
   margin-top: -15rem;
-  animation: flicker 5s infinite;
+  animation: flicker 20s infinite;
 }
 
 .eclipse2 {
-  animation: flicker 5s infinite;
+  animation: flicker 20s infinite;
   margin-right: -4rem;
   margin-bottom: -5rem;
   bottom: 0;
@@ -141,10 +162,20 @@ a.underline {
 /*  */
 
 .button-white {
-  border-radius: 5px;
-  border: 0;
-  padding: 12px 20px;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
   background: var(--primary-color);
+  color: white;
+}
+
+.button-white:hover {
+  text-decoration: none;
   color: white;
 }
 
